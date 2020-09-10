@@ -17,3 +17,6 @@ Technologies used:
 2. JavaFX
 3. Indian railways API
 4. MySQL database for storage of data. (Which later can be exported to AWS if the application is made available for public)
+
+Project Video Drive Link:
+https://drive.google.com/drive/u/1/folders/11qi9AWBjtIoC8mynwdxiU2gAv-pkwcC7
