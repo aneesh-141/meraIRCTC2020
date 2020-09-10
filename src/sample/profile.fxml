@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="profanc" prefHeight="427.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Profile">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="427.0" stroke="BLACK" strokeType="INSIDE" width="215.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9351144748107167">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.2738255262374878" green="0.768015444278717" blue="0.9184210300445557" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.1508357673883438" green="0.12799707055091858" blue="0.8131579160690308" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Label layoutX="38.0" layoutY="7.0" text="MERA-IRCTC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="95.0" text="WELCOME" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nam" layoutX="64.0" layoutY="115.0" text="aneesh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="41.0" text="USER DASHBOARD" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Circle fill="#f8f8f8" layoutX="108.0" layoutY="234.0" radius="68.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="116.0" fitWidth="116.0" layoutX="50.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IRCTC.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="54.0" layoutY="321.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="39.0" prefWidth="107.0" style="-fx-background-color: RED;" text="LOGOUT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="294.0" fitWidth="294.0" layoutX="262.0" layoutY="53.0" opacity="0.08" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IRCTC.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="223.0" layoutY="251.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="107.0" style="-fx-background-color: RED;" text="PNR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <Button layoutX="342.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#trainz" prefHeight="83.0" prefWidth="107.0" style="-fx-background-color: GREEN;" text="TRAIN INFO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="465.0" layoutY="252.0" mnemonicParsing="false" onMouseClicked="#stnn" prefHeight="83.0" prefWidth="107.0" style="-fx-background-color: #f88a04;" text="STATION INFO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="228.0" layoutY="218.0" text="THE SERVICES WHICH WE PROVIDE:">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="340.0" text="(COMING SOON!)" textFill="#30870d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="44.0" text="USER INFORMATION:" textFill="#1242df">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="404.0" layoutY="89.0" startX="-100.0" stroke="#1539cf" />
+      <Label layoutX="514.0" layoutY="14.0" text="Online" textFill="#118f1f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="116.0" text="USER ID:" textFill="#0aa746">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="229.0" layoutY="141.0" text="EMAIL ID:" textFill="#0aa746">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="ud" layoutX="317.0" layoutY="116.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="em" layoutX="317.0" layoutY="141.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

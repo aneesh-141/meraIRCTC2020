@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anct" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Traininfo">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="80.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.04580152398757352">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.14629629254341125" green="0.7581172585487366" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.09279999881982803" green="0.10613832622766495" blue="0.5799999833106995" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="288.0" fitWidth="311.0" layoutX="146.0" layoutY="98.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IRCTC.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="23.0" text="MERA-IRCTC" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="43.0" text="TRAIN INFORMATION" textFill="WHITE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="199.0" layoutX="30.0" layoutY="105.0" stroke="BLACK" strokeType="INSIDE" width="188.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.04580152398757352">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.056437622755765915" green="0.8236842155456543" blue="0.2226743847131729" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.21250000596046448" green="0.75" blue="0.26625001430511475" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="58.0" layoutY="120.0" text="PREVIOUS NUMBER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="146.0" text="WHICH YOU HAVE CHECKED:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="99.0" layoutX="57.0" layoutY="181.0" stroke="BLACK" strokeType="INSIDE" width="132.0" />
+      <Label fx:id="oldd" layoutX="77.0" layoutY="210.0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="108.0" text="ENTER THE TRAIN NUMBER:" textFill="#0876cf">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tno" layoutX="329.0" layoutY="131.0" prefHeight="37.0" prefWidth="230.0" />
+      <Label layoutX="329.0" layoutY="208.0" text="TRAIN NAME:" textFill="#0876cf">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="263.0" text="STARTING POINT:" textFill="#0876cf">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="329.0" layoutY="318.0" text="FINAL DESTINATION:" textFill="#0876cf">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="332.0" layoutY="230.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="src" layoutX="332.0" layoutY="282.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="dest" layoutX="333.0" layoutY="337.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="154.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: RED;" text="LOGOUT" textFill="WHITE" />
+      <Button layoutX="29.0" layoutY="318.0" mnemonicParsing="false" onMouseClicked="#prev" style="-fx-background-color: GREEN;" text="PREVIOUS" textFill="WHITE" />
+      <Button layoutX="526.0" layoutY="173.0" mnemonicParsing="false" onMouseClicked="#go" style="-fx-background-color: GREEN;" text="GO" textFill="WHITE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="268.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="0.8244274663561173" endY="1.0" startX="0.4923663908288679">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.06111111119389534" green="0.7339814901351929" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07378654927015305" green="0.08610940724611282" blue="0.8131579160690308" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="211.0" layoutY="24.0" text="WELCOME TO" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="53.0" text="MERA-IRCTC " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+      <Line endX="105.79998779296875" layoutX="306.0" layoutY="117.0" startX="-122.19999694824219" stroke="WHITE" />
+      <Ellipse fill="WHITE" layoutX="298.0" layoutY="195.0" radiusX="65.0" radiusY="63.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="242.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IRCTC.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="208.0" layoutY="277.0" text="PLEASE SELECT:" textFill="#0772cf">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="47.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#register" prefHeight="44.0" prefWidth="193.0" style="-fx-background-color: red;" text="REGISTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="365.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="44.0" prefWidth="193.0" style="-fx-background-color: GREEN;" text="LOGIN" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

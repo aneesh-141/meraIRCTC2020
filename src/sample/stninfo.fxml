@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="tnanc" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Stninfo">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="77.0" stroke="BLACK" strokeType="INSIDE" width="600.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.09220760315656662" green="0.7841415405273438" blue="0.9394736886024475" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2351851910352707" green="0.2479320913553238" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="11.0" layoutY="11.0" text="MERA-IRCTC" textFill="#fdfdfd">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="28.0" text="STATION INFORMATION" textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font></Label>
+      <ImageView fitHeight="279.0" fitWidth="279.0" layoutX="154.0" layoutY="94.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IRCTC.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff4c1f" height="200.0" layoutX="25.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="179.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="101.0" layoutX="42.0" layoutY="178.0" stroke="BLACK" strokeType="INSIDE" width="144.0" />
+      <Label layoutX="47.0" layoutY="110.0" text="PREVIOUS NUMBER" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="132.0" text="WHICH YOU HAVE CHECKED:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="olddd" layoutX="77.0" layoutY="220.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="141.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#logoutstn" style="-fx-background-color: red;" text="LOGOUT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#prev" style="-fx-background-color: green;" text="PREVIOUS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="335.0" layoutY="111.0" text="ENTER THE STATION CODE:" textFill="#1653b5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tnsearch" layoutX="335.0" layoutY="141.0" prefHeight="27.0" prefWidth="235.0" />
+      <Button layoutX="535.0" layoutY="176.0" mnemonicParsing="false" onMouseClicked="#gostn" style="-fx-background-color: green;" text="GO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="335.0" layoutY="210.0" text="STATION NAME:" textFill="#0051cf">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="255.0" text="STATION NAME (In Hindi):" textFill="#0051cf">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="302.0" text="LONGITUDE:" textFill="#0051cf">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="347.0" text="LATITUDE:" textFill="#0051cf">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="stnnm" layoutX="335.0" layoutY="230.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="hindi" layoutX="335.0" layoutY="274.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="longi" layoutX="335.0" layoutY="320.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lati" layoutX="335.0" layoutY="364.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
